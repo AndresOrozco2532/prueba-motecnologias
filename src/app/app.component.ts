@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     this.data.forEach((e) => {
       if (e.age > 35) {
         e.salary = e.salary.substring(1, e.salary.length);
-        e.salary = e.salary + payRise;
+        e.salary = Number(e.salary) + payRise;
         e.salary = '$' + e.salary;
       }
     });
