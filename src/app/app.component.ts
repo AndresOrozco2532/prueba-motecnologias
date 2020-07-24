@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   Exercise1 = () => {
     const payRise = 500000;
     this.data.forEach((e) => {
-      if (e.age > 30) {
+      if (e.age > 35) {
         e.salary = e.salary.substring(1, e.salary.length);
         e.salary = e.salary + payRise;
         e.salary = '$' + e.salary;
